@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Registration Form</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		
+		
+		
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">	
+		
+		
+		<script src="validation.js"></script>
+		
+	<style>
+	body { margin: 0 0 0; }
+	
+	#logo {
+		height: 100px;
+		width: 500px;
+	}
+	#data {
+		border-style: inset;
+		font-family: 'Slabo 27px', serif;
+		
+	}
+	#p {
+		background-color: navy;
+		color: white;
+	}
+	.button {
+		color: blue;
+	}
+	
+	.footer {
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background-color:  black;
+	    color: white;
+	    text-align: center;
+	}
+	.fixed-bottom {
+		margin: 0 0 0;
+	}
+	</style>	
+	</head>	
+	<body>
+	
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<div class="container" id="logo">
+			<div><img src="image/pu.svg"></div>
+	</div>
+	<br><br><br><br><br>
+	
+	<div class="container">
+	<p style='text-transform:uppercase' style="font-family: 'Oswald', sans-serif; word-spacing: 2.5px;"><b>Enter the required details below and click on the 'Submit' button on the bottom of the page.<br>
+	</b></p>
+	<div id="data">
+	<form name='myForm' action="signup.php" onSubmit="return formValidation();" method="post">
+			<div id="data">			
+				<table class="table"class="form-control">
+				<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+
+			<div id="p">
+				<p style="margin-left: 1em;"><b> Personal Details </b></p></div>
+<tr>			
+<td><label for="userid">Full Name:</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="userid" size="12" /></td>
+</tr><tr>
+<td><label for="sex">Gender:</label></td>
+<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="sex">
+<option selected="" value="Default">--SELECT GENDER--</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Non - Binary">Non - Binary</option>
+</select></td>
+</tr><tr>
+<td><label for="dob">Date of Birth</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="date" name="dob" size="12" /></td>
+</tr><tr>
+<td><label for="email">Email:</label></td>
+<td><input class="form-control" style='text-transform:lowercase' type="email" name="Email" size="50" /></td>
+</tr><tr>
+<td><label for="ac">Addhar Card Number</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="ac" size="12" /></td>
+</tr><tr>
+<td><label for="fn">Father's Name</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="fn" size="12" /></td>
+</tr><tr>
+<td><label for="">Mother's Name</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="mn" size="12" /></td>
+</tr><tr>
+<tr><td><label for="country">Nationality</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="country" size="12" /></td>
+</tr><tr>
+<td><label for="address">Address:</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="address" size="50" /></td>
+</tr><tr>
+<td><label for="cy">City</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="cy" size="12" /></td>
+</tr><tr>
+<td><label for="zip">PIN/ZIP Code:</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="zip" /></td>
+</tr><tr>
+<td><label for="st">State</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="st" size="12" /></td>
+</tr><tr>
+<td><label for="mob">Mobile Number</label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" placeholder="+91" size="1" disabled/><input class="form-control" type="text" name="mob" size="12" /></td>
+</tr><tr>
+</tbody>
+  </table>
+  </div><br>
+  <div id="data">
+<div id="p">
+					<p style="margin-left: 1em;"><b> 12th Examination Details</b> </p>
+				</div>  
+<table class="table"class="form-control">
+				<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+
+<td><label for="il">Institution Last Attended </label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="il" /></td>
+</tr><tr>
+<td><label for="sb">12th Examination Board</label></td>
+<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="sb">
+<option selected="" value="Default">--SELECT BOARD--</option>
+<option value="C.B.S.E.">Central Board of Secondary Education (CBSE)</option>
+<option value="I.C.S.E.">The Indian Certificate of Secondary Education (ICSE)</option>
+<option value="State Board">Other State Board</option>
+</select></td>
+</tr><tr>
+<td><label for="yp">Year of Passing/Appering</label></td>
+<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="yp">
+<option selected="" value="Default">--SELECT YEAR--</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+</select></td>
+</tr><tr>
+<td><label for="es">5th Subject in 12th </label></td>
+<td><input class="form-control" type="text" style='text-transform:uppercase' name="es" /></td>
+</tr><tr>
+</tbody>
+  </table>
+  </div><br>
+  <div id="data">
+  <div id="p">
+					<p style="margin-left: 1em;"><b> 10th Examination Details</b> </p>
+				</div>
+<table class="table"class="form-control">
+				<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+
+
+<td><label for="sb10">10th Examination Board</label></td>
+<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="sb10">
+<option selected="" value="Default">--SELECT BOARD--</option>
+<option value="C.B.S.E.">Central Board of Secondary Education (CBSE)</option>
+<option value="I.C.S.E.">The Indian Certificate of Secondary Education (ICSE)</option>
+<option value="State Board">Other State Board</option>
+</select></td>
+</tr><tr>
+<td><label for="yp10">Year of Passing/Appering 10th</label></td>
+<td><select name="yp10" class="btn btn-primary">
+<option selected="" style='text-transform:uppercase' class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" value="Default">--SELECT YEAR--</option>
+<option value="2018">2016</option>
+<option value="2017">2015</option>
+<option value="2016">2014</option>
+</select></td>
+</tr><tr>
+<td><label for="op">Overall Percentage </label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="op" /></td>
+</tr><tr>
+
+<!--
+<td><label for="mm">Marks in Mathematics </label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="mm" /></td>
+</tr><tr>
+<td><label for="pm">Marks in Physics </label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="pm" /></td>
+</tr><tr>
+<td><label for="cm">Marks in Chemistry </label></td>
+<td><input class="form-control" style='text-transform:uppercase' type="text" name="cm" /></td>
+</tr><tr>
+
+-->
+
+
+</tbody>
+  </table>
+  </div><br>
+  <div id="data">
+  <div id="p">
+					<p style="margin-left: 1em;"><b> Test Center Preferences</b> </p>
+				</div>
+<table class="table"class="form-control">
+				<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+
+
+<td><label for="tc1">Test Centre Prefrence 1 </label></td>
+<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="tc1">
+	  <option selected="" value="Default">--TEST CENTRES 1--</option>
+	  <option value="Chennai">Chennai</option>
+	  <option value="Hyderabad">Hyderabad</option>
+	  <option value="Kolkata">Kolkata</option>
+	  <option value="Lucknow">Lucknow</option>
+	  <option value="Mumbai">Mumbai</option>
+	  <option value="New Delhi">New Delhi</option>
+	  <option value="Patna">Patna</option>
+	  <option value="Bangalore">Bangalore</option>
+	  </select></td>
+	  </tr><tr>
+	<td><label for="tc2">Test Centre Prefrence 2 </label></td>
+	<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="tc2">
+	  <option selected="" value="Default">--TEST CENTRES 1--</option>
+      <option value="Chennai">Chennai</option>
+	  <option value="Hyderabad">Hyderabad</option>
+	  <option value="Kolkata">Kolkata</option>
+	  <option value="Lucknow">Lucknow</option>
+	  <option value="Mumbai">Mumbai</option>
+	  <option value="New Delhi">New Delhi</option>
+	  <option value="Patna">Patna</option>
+	  <option value="Bangalore">Bangalore</option>
+	  </select></td>
+	  </tr><tr>
+	  
+	<td><label for="tc3">Test Centre Prefrence 3 </label></td>
+	<td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="tc3">
+	  <option selected="" value="Default">--TEST CENTRES 1--</option>
+      <option value="Chennai">Chennai</option>
+	  <option value="Hyderabad">Hyderabad</option>
+	  <option value="Kolkata">Kolkata</option>
+	  <option value="Lucknow">Lucknow</option>
+	  <option value="Mumbai">Mumbai</option>
+	  <option value="New Delhi">New Delhi</option>
+	  <option value="Patna">Patna</option>
+	  <option value="Bangalore">Bangalore</option>
+	  </select></td>
+	  </tr><tr>
+	  
+	  <!--
+	  
+	  <td><label for="ti">Test Attempting Time </label></td>
+	  <td><select class="btn btn-primary" style="font-family: 'Slabo 40px', serif;" style='text-transform:uppercase' name="ti">
+	  <option selected="" value="Default">--SELECT TIME--</option>
+	<option value="Day">Day</option>
+	<option value="Night">Night</option>    -->
+</select></td>
+</tr><tr>
+</tbody>
+  </table>
+  </div><br>
+  <div id="data">
+  <div id="p">
+				<p style="margin-left: 1em;"><b> Login Details </b></p>
+				</div>
+<table class="table"class="form-control">
+				<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+
+
+
+<td><label for="pas">Password:</label></td>
+<td><input class="form-control" type="password" name="pas" size="12" /></td>
+</tr><tr>
+<td><label for="cpas">Confirm Password:</label></td>
+<td><input class="form-control" type="password" name="cpas" size="12" /></td></tr>
+</tbody>
+  </table>
+  </div><br>
+<input style="font-family: 'Slabo 40px', serif;" type="submit" name="submit" value="SUBMIT" class="btn btn-lg btn-success btn-block"/>
+
+  
+</form>
+</div>
+				
+			
+	
+			
+		
+		</div><br><br><br><br><br><br><br><br><br>
+		<div class="footer" class="fixed-bottom">
+		<footer class="container" id="f">
+			<div class="row">
+				  <div class="col-4"><br>
+						<a href="http://presidencyuniversity.in/"><span style="color:white;" >PRESIDENCY UNIVERSITY</a><br>
+						<span style="opacity:0.5;">Rated 4/5 based on 281 Customer reviews</span><br>
+				</div>
+					  
+				  <div class="col-8" ><br>Campus :<br>
+							Presidency University,
+							Itgalpur, Rajanakunte,
+							Yelahanka,
+							Bengaluru 560064
+							Karnataka, India.
+				</div>
+				<div class="col-12"><hr>&copy; 2018, PRESIDENCY UNIVERSITY. ALL RIGHTS RESERVED.
+					<br><span style="opacity:0.5;">WEBSITE BY PRESIDENCY UNIVERSITY STUDENTS</span></div>
+			</div>
+		</footer>
+		</div>
+	
+	
+	
+	
+		
+	</div>
+	</body>
+</html>

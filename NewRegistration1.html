@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>New Registration</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		
+		
+		
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">		
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="">
+		
+		
+		
+	<style>
+	body { margin: 0 0 0; }
+	
+	#logo {
+		height: 100px;
+		width: 500px;
+	}
+	
+	#data {
+		border-style: inset;
+		font-family: 'Slabo 27px', serif;
+		
+	}
+	
+	#p {
+		background-color: navy;
+		color: white;
+	}
+	</style>
+	</head>
+
+	
+	<body>
+	
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+	<div class="container">
+	
+	
+	
+	<div class="container" id="logo">
+			<div><img src="image/pu.svg"></div>
+	</div>	
+		
+		
+	<p style="font-family: 'Oswald', sans-serif; word-spacing: 2.5px;"><b>Enter the required details below amd click on the 'Submit' button on the bottom of the page.</b><br><br>Select the Stream.</p>
+	
+	<form action="signup.php" onclick="myFunction()" method="post">
+		<div id="data">	
+			<div id="p">
+				<p style="margin-left: 1em;"><b> Personal Details </b></p>
+			</div>
+			<div style="margin-left: 1em;" id="data1">
+				
+					<table class="table">
+						<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+						<tr>
+						  <td>Full Name</td>
+						  <td><input style='text-transform:uppercase' type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Gender</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Date of Birth</td>
+						  <td><input style='text-transform:uppercase' type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Email-Id</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Father's Name</td>
+						  <td><input style='text-transform:uppercase' type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Mother's Name</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Nationality</td>
+						  <td><input type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Address</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/><br><br>
+						  <input style='text-transform:uppercase'type="text" name="first"required/>
+						  <br><br><input style='text-transform:uppercase'type="text" name="first"required/>
+						  <br><br><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>City</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Pincode</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>State</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Land Line Number</td>
+						  <td><input style='text-transform:uppercase'type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Mobile Number</td>
+						  <td><input type="text" size="1" value="+91" disabled/><input style='text-transform:uppercase' type="text" name="first"required/></td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				</div><br>
+			<div id="data">
+				<div id="p">
+					<p style="margin-left: 1em;"><b>Examination Details</b> </p>
+				</div>
+				<table class="table">
+					<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+						<tr>
+						  <td>Institution <br>Last attended.</td>
+						  <td><input style='text-transform:uppercase' type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>10th Passing Percentage</td>
+						  <td><input style='text-transform:uppercase' type="text" name="first"required/><p>Upto 2 Decimal Points</p></td>
+						  </tr>
+						<tr>
+						  <td>Examination</td>
+						  <td>12th Year or It's Equivalent</td>
+						</tr>
+						<tr>
+						  <td>examination board</td>
+						  <td> </td>
+						</tr>
+						<tr>
+						  <td>Year of Passing/Apperaing</td>
+						  <td></td>
+						</tr>
+						<tr>
+						  <td>Choose the subject<br> to be taken for<br> part IV of PUEE</td>
+						  <td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<br>
+			<div id="data">
+				<div id="p">
+					<p style="margin-left: 1em;"><b> Test Center Preferences</b> </p>
+				</div>
+				<table class="table">
+					<thead style='text-transform:uppercase' style="font-family: 'Slabo 40px', serif;"><tr><td><b>Choose your PUEE - 2018 online test center from the dropdown Menu. You have to specify three preferences for the test centers for Bangalore Campus.</b></td></tr>
+					</thead>
+					<tbody style='text-transform:uppercase' style="font-family: 'Slabo 27px', serif;">
+						<tr>
+						  <td>Institution <br>Last attended.</td>
+						  <td><input style='text-transform:uppercase' type="text" name="first"required/></td>
+						</tr>
+						<tr>
+						  <td>Examination</td>
+						  <td>12th Year or It's Equivalent</td>
+						</tr>
+						<tr>
+						  <td>examination board</td>
+						  <td> </td>
+						</tr>
+						<tr>
+						  <td>Year of Passing/Apperaing</td>
+						  <td></td>
+						</tr>
+						<tr>
+						  <td>Choose the subject<br> to be taken for<br> part IV of PUEE</td>
+						  <td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</form>		
+	</div>
+</body>
+</html>

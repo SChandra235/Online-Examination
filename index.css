@@ -1,0 +1,125 @@
+	
+	body {
+	  zoom: 125%;
+	}	
+	
+	#logo {
+		height: 100px;
+		width: 500px;
+		margin-top: -600px;
+	}
+	#l1 { 
+		margin-top: -10px;
+	}
+		
+	#s1 {
+		height:;
+		margin: 0 0 0;
+	}
+	
+	.carousel-indicators {
+		bottom:100px;
+		color: #ff9933;
+	}
+
+	.carousel-inner {
+		margin-bottom:-100px;
+	}
+	
+	h6 {
+		font-family: 'Mina', sans-serif;
+		color: white;
+	}
+	
+	#school {
+		background-color: #ff9933;
+	}
+	p { color: white; }
+	
+	#hsoe {
+		background-color: blue;
+		height: 40px;
+		color: white;
+	}
+	
+	#hsol {
+		background-color: #9fc7fc;
+		height: 40px;
+		color: white;
+	}
+	
+	#ban {
+		background-color: white;
+		margin: 20px 0 0 ;
+	}
+	
+	#on {
+		color: darkblue;
+		font-family: 'Spectral SC', serif;
+	}
+	#n {
+		font-family: 'Spectral SC', serif;
+	}
+	
+	#l {
+		position: fixed;
+		bottom: 500px;
+		right: 1000px;
+	}
+		
+	#t {
+		color: black;
+		font-size:120%;
+		font-family: 'Titillium Web', sans-serif;
+	}
+	th {
+		font-family: 'Cormorant Garamond', serif;
+	}
+
+	td { 
+		font-family: 'Playfair Display', serif;
+		font-size: 100%;
+		
+	}
+	
+	#f {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 110%;
+	}
+	
+	.footer {
+	    position: auto;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background-color:  black;
+	    color: white;
+	    text-align: center;
+	}
+	
+	.fixedbutton {
+		position: fixed;
+		bottom: 500px;
+		left: 1000px; 
+	}
+	
+	.fixed-top {
+		margin-top: 100px;
+	}
+	
+	.button {
+		background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 40px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		opacity: 0.8;
+		transition-duration: 0.4s;
+	}
+	.button:hover {
+		background-color: navy;
+		color: white;
+	}
